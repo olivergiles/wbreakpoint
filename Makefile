@@ -5,10 +5,10 @@ install_requirements:
 	@pip install -r requirements.txt
 
 check_code:
-	@flake8 scripts/* wbreakpoint/*.py
+	@flake8 wbreakpoint/*.py
 
 black:
-	@black scripts/* wbreakpoint/*.py
+	@black wbreakpoint/*.py
 
 test:
 	@coverage run -m pytest tests/*.py
